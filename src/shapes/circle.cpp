@@ -79,4 +79,4 @@ bool Circle::equals(Circle other) {
         }
         return false;
     }
-}
+//fin circle 2
