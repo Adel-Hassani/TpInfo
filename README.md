@@ -24,6 +24,6 @@ A student project to implement and test geometric shapes (Circle, Square, Triang
 
 ## 🛠️ Usage
 
-### Compilation
+### Compilation(Without Make)
 ```bash
 g++ -std=c++23 -Iinclude -o test.exe src/shapes/circle.cpp src/draw.cpp src/point.cpp src/shapes/square.cpp src/shapes/triangle.cpp main.cpp -lgdi32 -luser32
