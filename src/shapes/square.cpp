@@ -6,7 +6,7 @@
 #include <stdexcept> // For error handling
 
 Square::Square(Point P, Point R) {
-    if (P.x == R.x || P.y == R.y) {
+    if (P.x == R.x && P.y == R.y) {
         throw std::invalid_argument("Invalid square: Points must form a diagonal.");
     }
     
