@@ -18,15 +18,12 @@ A student project to implement and test geometric shapes (Circle, Square, Triang
 
 ### Prerequisites
 - **Compiler**: `g++` with C++23 support.
-- **Libraries**: 
-  - [CTurtle](https://github.com/walkerje/Cturtle) (for graphical output).
-  - [CImg](http://cimg.eu/) (included via `CImg.hpp`).
 - **OS**: Tested on Windows (requires `gdi32` and `user32` libraries).
-
+- 
 ---
 
 ## 🛠️ Usage
 
 ### Compilation
 ```bash
-g++ -std=c++23 -Iinclude -o test src/shapes/circle.cpp src/draw.cpp src/point.cpp src/shapes/square.cpp src/shapes/triangle.cpp testSquare.cpp -lgdi32 -luser32
+g++ -std=c++23 -Iinclude -o test.exe src/shapes/circle.cpp src/draw.cpp src/point.cpp src/shapes/square.cpp src/shapes/triangle.cpp main.cpp -lgdi32 -luser32
