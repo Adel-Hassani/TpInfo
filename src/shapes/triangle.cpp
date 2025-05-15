@@ -46,7 +46,7 @@ void Triangle::rotate(double angle) {
     double bY = B.y - Center.y;
     double cX = C.x - Center.x;
     double cY = C.y - Center.y;
-    //we do this to ensure the rotation is around the center
+    //we do this to ensure the rotation is around the center.
     A.x = aX * cos(angle) - aY * sin(angle) + Center.x;
     A.y = aX * sin(angle) + aY * cos(angle) + Center.y;
     
