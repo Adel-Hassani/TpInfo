@@ -11,7 +11,7 @@
 int main(){
     //test circle now
     Point center(0,0);
-    Circle circle(100, center);
+    Circle circle(-100, center);
     assert(circle.circumference() == 2*3.14159265358979323846*100); // circumference
     assert(circle.area() == 3.14159265358979323846*100*100); //area
     assert(circle.center.x == 0); // x-coordinate
@@ -19,3 +19,4 @@ int main(){
     assert(circle.equals(Circle(100, center))); //equality with another circle
     circle.draw();
 }
+//fin test
