@@ -6,9 +6,9 @@ A student project to implement and test geometric shapes (Circle, Square, Triang
 
 ## 🚀 Features
 - **Shapes**: 
-  - **Circle**: Calculate circumference, area, translate, resize, and compare equality.
-  - **Square**: Calculate perimeter, area, translate, resize, and compare equality.
-  - **Triangle**: Calculate perimeter, area, translate, resize, and compare equality.
+  - **Circle**: Calculate circumference, area, translate, resize, draw and compare equality.
+  - **Square**: Calculate perimeter, area, translate, resize, draw and compare equality.
+  - **Triangle**: Calculate perimeter, area, translate, resize, draw and compare equality.
 - **Graphical Visualization**: Draw shapes using CTurtle.
 - **Tests**: Pre-written tests to validate implementations (e.g., `testSquare.cpp`).
 
