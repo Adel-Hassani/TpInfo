@@ -28,15 +28,24 @@ double Circle::area() {
 // Draw the circle
 void Circle::draw() {
     ct::TurtleScreen screen;
-	ct::Turtle t(screen);
-    //draw circle
+    ct::Turtle t(screen);
+    
+    // Hide the turtle for cleaner visualization
+    t.hideturtle();
+    
+    // Position the turtle at the bottom of the circle (pen up)
     t.penup();
-    t.setposition(center.x, center.y - radius); // Move to the bottom of the circle
+    t.setposition(center.x, center.y - radius);
+    
+    // Draw the circle
     t.pendown();
-    t.circle(radius); // Draw the circle
+    t.circle(radius);
+    
+    // Move back to the center without drawing
     t.penup();
-    t.setposition(center.x, center.y); // Move back to the center
-    t.pendown();
+    t.setposition(center.x, center.y);
+    
+    // Keep the window open until clicked
     screen.exitonclick();
 }
 
