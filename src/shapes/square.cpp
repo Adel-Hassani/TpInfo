@@ -47,7 +47,7 @@ void Square::resize(double ratio) {
 void Square::rotate(double angle) {
     Point center_point = center();
     
-    // Rotate point A around the center(fixed from last faulty implementation)
+    // Rotate point A around the center(fixed from last faulty implementation).
     double dx = A.x - center_point.x;
     double dy = A.y - center_point.y;
     A.x = center_point.x + dx * cos(angle) - dy * sin(angle);
