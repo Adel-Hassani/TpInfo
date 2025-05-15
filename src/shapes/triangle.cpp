@@ -8,7 +8,7 @@
 Triangle::Triangle(Point P, Point Q, Point R) : A(P), B(Q), C(R) {};
 double module(Point a ,Point b )
 {
-    // calcule le module entre deux points a travers un vecteur
+    // calcule le module entre deux points a travers un vecteur.
     Point c;
     c.x=b.x-a.x;
     c.y=b.y-a.y;
