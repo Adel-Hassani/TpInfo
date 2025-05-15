@@ -5,7 +5,7 @@
 #include "CTurtle.hpp"
 #include <stdexcept> // For exceptions
 namespace ct = cturtle;
-const double PI = 3.14159265358979323846; // Define PI constant
+const double PI = 3.14159265358979323846; //Definition PI
  
 
 
@@ -30,22 +30,17 @@ void Circle::draw() {
     ct::TurtleScreen screen;
     ct::Turtle t(screen);
     
-    // Hide the turtle for cleaner visualization
     t.hideturtle();
     
-    // Position the turtle at the bottom of the circle (pen up)
     t.penup();
     t.setposition(center.x, center.y - radius);
     
-    // Draw the circle
     t.pendown();
     t.circle(radius);
     
-    // Move back to the center without drawing
     t.penup();
     t.setposition(center.x, center.y);
     
-    // Keep the window open until clicked
     screen.exitonclick();
 }
 
