@@ -3,9 +3,16 @@
 #include "draw.hpp"
 #include "shapes.hpp"
 #include <cmath>
+#include <stdexcept> // For error handling
 
-Square::Square(Point P, Point R) : A(P), C(R) {};
-
+Square::Square(Point P, Point R) {
+    if (P.x == R.x || P.y == R.y) {
+        throw std::invalid_argument("Invalid square: Points must form a diagonal.");
+    }
+    
+    A = P;
+    C = R;
+}
 double Square::side() {
     return A.distance(C) / sqrt(2);
 }

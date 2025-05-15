@@ -3,12 +3,18 @@
 #include <cmath>
 #include <iostream>
 #include "CTurtle.hpp"
-
+#include <stdexcept> // For exceptions
 namespace ct = cturtle;
 const double PI = 3.14159265358979323846; // Define PI constant
  
-Circle::Circle(double r, Point c) : radius(r), center(c) {};
 
+
+Circle::Circle(double r, Point c) : center(c) {
+    if (r < 0) {
+        throw std::invalid_argument("Radius cannot be negative!");
+    }
+    radius = r;
+}
 // Calculate circumference
 double Circle::circumference() {
     return 2 * PI * radius;
