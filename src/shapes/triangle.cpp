@@ -70,7 +70,7 @@ bool Triangle::equals(Triangle triangle)
         return false;
     }
 }
-bool Triangle::isRightAngled()
+bool Triangle::isRightAngled()   //verify if riangle is right angled
 {
     if(module(A,B)*module(A,B)==module(B,C)*module(B,C)+module(C,A)*module(C,A))
     {
